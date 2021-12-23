@@ -64,31 +64,31 @@ ENV PYTHONPATH=/usr/src/app:$PYTHONPATH
 CMD ["python","./core/framework/interface.py"]
 ```
 
-### 3、 制作镜像
+### 2、 制作镜像
 
 ```shell
 docker build -t {镜像名称}:{镜像tag} .
 ```
 
-### 4、 导出镜像【可选】
+### 3、 导出镜像【可选】
 
 ```shell
 docker save -o {镜像名称}.tar {镜像名称}:{镜像tag}
 ```
 
-### 5、 导入镜像【可选】
+### 4、 导入镜像【可选】
 
 ```shell
 docker load -i {镜像名称}.tar
 ```
 
-### 6、 启动镜像
+### 5、 启动镜像
 
 ```shell
 docker run -d -p 宿主机端口:容器端口 --rm --name {容器名称} {镜像名称}:{镜像tag}
 ```
 
-### 7、 进入容器
+### 6、 进入容器
 
 ```shell
 docker exec -it {容器id} /bin/bash
