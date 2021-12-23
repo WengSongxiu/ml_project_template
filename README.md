@@ -24,7 +24,7 @@
 
 ## Requirements
 
-执行源代码需要按照以下软件。
+执行源代码需要安装以下软件。
 
 * Python 3.x
 * requirements.txt
